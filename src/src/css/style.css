@@ -1,0 +1,30 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  border: 1px solid red;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+  height: 100px;
+  border: 1px solid red;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 760px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 580px;
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
