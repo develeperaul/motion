@@ -1,6 +1,9 @@
 .navbar
     background: url('../../img/navbar/shape-bg.png') right no-repeat
     background-size: cover
+    width: 100%
+    position: fixed
+    z-index: 10
     &-block
         padding-top: 16px
         display: flex
@@ -54,6 +57,7 @@
       justify-content: center
       &-list
           flex-direction: column
+          display: none
 @media (max-width: 560px)
   .navbar
       &-block
@@ -64,4 +68,5 @@
           margin-top: 10px
           flex-direction: column
           display: inline-block
+          display: none
         

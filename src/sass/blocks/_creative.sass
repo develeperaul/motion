@@ -1,0 +1,50 @@
+.creative
+    background-color: $creative-bg
+    &__title
+        color: $section-text
+        margin: 0
+    &__subtitle
+        color: $nav-color
+    &-block
+        display: flex
+        justify-content: space-between
+        margin-top: 50px
+        &__item
+            width: 228px
+            text-align: center
+            margin-bottom: 24px
+        &__image
+            display: inline-block
+            border-radius: 50%
+            width: 100px
+            height: 100px
+            line-height: 125px
+            background-color: $nav-color
+        &__title
+            color: $section-text
+            font-size: 30px
+            font-weight: 200
+            margin-top: 12px
+            margin-bottom: 9px
+        &__subtitle
+            color: $nav-color
+            font-size: 18px
+
+@media (max-width: 768px)
+  .creative
+      &-block
+        flex-wrap: wrap
+        &__item
+            &:last-child
+                display: block
+                margin: auto
+                margin-top: 20px
+                padding-bottom: 24px
+    
+@media (max-width: 560px)
+    .creative
+        &-block 
+            display: block
+            &__item
+                margin: auto
+                

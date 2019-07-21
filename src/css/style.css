@@ -5,18 +5,16 @@
 
 body {
   margin: 0;
-  font-family: sans-serif;
-  background-color: #eb4f4e;
 }
 
 img {
   max-width: 100%;
+  max-height: 100%;
 }
 
 .container {
   width: 951px;
   margin: auto;
-  height: 100px;
 }
 
 .section-title {
@@ -25,6 +23,7 @@ img {
   font-family: "trebuchetR";
   text-shadow: 0 1px 1px #c34b2a;
   font-weight: 200;
+  padding-top: 42px;
   margin-bottom: 12px;
 }
 
@@ -76,6 +75,9 @@ img {
 .navbar {
   background: url("../../img/navbar/shape-bg.png") right no-repeat;
   background-size: cover;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
 }
 
 .navbar-block {
@@ -162,6 +164,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    display: none;
   }
 }
 
@@ -183,7 +186,14 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     display: inline-block;
+    display: none;
   }
+}
+
+.motion {
+  padding-top: 58px;
+  background-color: #eb4f4e;
+  margin-bottom: -100px;
 }
 
 .motion__title {
@@ -192,5 +202,184 @@ img {
 
 .motion__subtitle {
   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .motion {
+    margin-bottom: -70px;
+  }
+}
+
+.creative {
+  background-color: #232324;
+}
+
+.creative__title {
+  color: #ffffff;
+  margin: 0;
+}
+
+.creative__subtitle {
+  color: #eb4f4e;
+}
+
+.creative-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+
+.creative-block__item {
+  width: 228px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.creative-block__image {
+  display: inline-block;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  line-height: 125px;
+  background-color: #eb4f4e;
+}
+
+.creative-block__title {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 200;
+  margin-top: 12px;
+  margin-bottom: 9px;
+}
+
+.creative-block__subtitle {
+  color: #eb4f4e;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .creative-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .creative-block__item:last-child {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    padding-bottom: 24px;
+  }
+}
+
+@media (max-width: 560px) {
+  .creative-block {
+    display: block;
+  }
+  .creative-block__item {
+    margin: auto;
+  }
+}
+
+.team {
+  background-color: #6cc372;
+}
+
+.team__title {
+  margin-top: 0;
+  color: #ffffff;
+}
+
+.team-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 26px;
+}
+
+.team-block__item {
+  width: 226px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.team-block__image {
+  display: inline-block;
+  text-align: center;
+  width: 164px;
+  height: 164px;
+  position: relative;
+  z-index: 0;
+  margin: 25px 31px;
+}
+
+.team-block__image:before {
+  content: "";
+  position: absolute;
+  border: 5px solid #6cc372;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  top: 0;
+  left: 8px;
+}
+
+.team-block__title {
+  font-family: "trebuchetR";
+  font-size: 22px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.team-block__subtitle {
+  display: block;
+  font-size: 18px;
+  color: #eb4f4e;
+  font-family: "trebuchetR";
+  margin-bottom: 22px;
+}
+
+.button {
+  width: 204px;
+  height: 43px;
+  margin: 11px;
+  font-size: 25px;
+  font-family: "trebuchetR";
+  color: #ffffff;
+  background-color: #6cc372;
+  border: none;
+}
+
+@media (max-width: 1200px) {
+  .team-block__item:last-child {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-block__item {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  .team-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */

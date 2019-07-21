@@ -1,0 +1,73 @@
+.team
+    background-color: $team-bg
+    &__title
+        margin-top: 0
+        color: $section-text
+    &-block
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        padding-bottom: 26px
+        &__item
+            width: 226px
+            text-align: center
+            background-color: $section-text
+            border-radius: 5px
+        &__image
+            display: inline-block
+            text-align: center
+            width: 164px
+            height: 164px
+            position: relative
+            z-index: 0
+            margin: 25px 31px
+            &:before
+                content: ""
+                position: absolute
+                border: 5px solid $team-bg
+                border-radius: 50%
+                width: 140px
+                height: 140px
+                top: 0
+                left: 8px
+                
+        &__title
+            font-family: "trebuchetR"
+            font-size: 22px
+            margin-top: 0px
+            margin-bottom: 20px
+        &__subtitle
+            display: block
+            font-size: 18px
+            color: $nav-color
+            font-family: "trebuchetR"
+            margin-bottom: 22px
+.button
+    width: 204px
+    height: 43px
+    margin: 11px
+    font-size: 25px
+    font-family: "trebuchetR"
+    color: $section-text
+    background-color: $team-bg
+    border: none
+
+@media (max-width: 1200px)
+    .team
+        &-block
+            &__item
+                &:last-child
+                    display: block
+                    margin: auto
+                    margin-top: 20px
+@media (max-width: 768px)
+    .team
+        &-block
+            &__item
+                display: block
+                margin: auto
+                margin-top: 20px
+@media (max-width: 560px)
+    .team
+        &-block 
+            flex-direction: column
